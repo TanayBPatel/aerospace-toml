@@ -1,4 +1,5 @@
 # aerospace-toml
+```
 Steps 
 1: navigate to ~./config/aerospace
 2: nano aerospace.toml
@@ -9,3 +10,4 @@ Steps
 
 Simple and short and replace usage of Option with Command for Everything 
 Check the ttoml for Reference 
+```
