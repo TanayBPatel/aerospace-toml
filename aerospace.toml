@@ -37,8 +37,8 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-on-focus-changed = 'move-mouse window-lazy-center'
+#on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+#on-focus-changed = 'move-mouse window-lazy-center'
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
@@ -156,6 +156,20 @@ cmd-7 = 'workspace 7'
 cmd-8 = 'workspace 8'
 cmd-9 = 'workspace 9'
 cmd-0 = 'workspace 10'
+
+ctrl-m = [
+    'layout tiling',          # Apply tiling layout to all workspaces
+    'flatten-workspace-tree', # Flatten any nested containers
+    'layout tiles'            # Ensure tiles layout is applied
+]
+
+
+cmd-b = 'exec-and-forget open -n -a "Brave Browser"'
+cmd-ctrl-t = 'exec-and-forget open -a Terminal'
+cmd-ctrl-v = 'exec-and-forget open -a "Visual Studio Code"'
+
+
+
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 cmd-shift-1 = 'move-node-to-workspace 1'
